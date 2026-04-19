@@ -1,0 +1,102 @@
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --accent-color: #007acc;
+  --accent-hover-color: #005bb5;
+  --accent-active-color: #003f87;
+  --border-color: #e0e0e0;
+}
+
+[data-theme='dark'] {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --accent-color: #bb86fc;
+  --accent-hover-color: #9f63d6;
+  --accent-active-color: #7e3eb0;
+  --border-color: #333;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    border: 7px solid black;
+    border-radius: 5px;
+}
+
+/*导航栏*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: cadetblue;
+}
+
+nav {
+    display: flex;
+    background-color: cadetblue;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 4.5rem;
+    flex: 1;
+    padding: 5px 20px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li a {
+  padding: 0.25rem 0.5rem;
+  margin: 0 0.25rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  outline: 3px solid black;
+  border-radius: 5px;
+}
+
+svg {
+  width: 4rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  padding-right: 5rem;
+  background-color: cadetblue;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+button:active {
+  background-color: var(--accent-active-color);
+}
+
+/* Dark Mode Toggle Button */
+.toggle-theme {
+  cursor: pointer;
+  padding: 0.5rem;
+  border: none;
+  
+}
