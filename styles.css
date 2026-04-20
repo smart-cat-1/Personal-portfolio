@@ -3,6 +3,7 @@
   --background-color-header: cadetblue;
   --text-color-header: #121212;
   --border-color: #121212;
+  --icon-hover-color: rgba(219, 219, 19, 0.598);
 }
 
 [data-theme='dark'] {
@@ -10,7 +11,7 @@
   --background-color-header: #121212;
   --text-color-header: #e0e0e0;
   --border-color: #e0e0e0;
-  
+  --icon-hover-color: rgb(205, 52, 52);
 }
 
 /*--accent-color: #bb86fc;
@@ -88,16 +89,16 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: var(--background-color-header); /*fix me*/
-}
-
-button:active {
-  background-color: var(--accent-active-color);
-}
-
 .toggle-theme {
   cursor: pointer;
   padding: 0.5rem;
   border: none;
+}
+
+.theme-icon {
+  fill: var(--background-color-header);
+}
+
+.toggle-theme:hover .theme-icon {
+  fill: var(--icon-hover-color);
 }
