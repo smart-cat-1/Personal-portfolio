@@ -3,6 +3,7 @@
   --background-color-header: cadetblue;
   --text-color-header: #121212;
   --border-color: #121212;
+  --border-color-main: #121212;
   --icon-hover-color: rgba(219, 219, 19, 0.598);
 }
 
@@ -11,6 +12,7 @@
   --background-color-header: #121212;
   --text-color-header: #e0e0e0;
   --border-color: #e0e0e0;
+  --border-color-main: #7e3eb0;
   --icon-hover-color: rgb(205, 52, 52);
 }
 
@@ -96,7 +98,7 @@ button {
 }
 
 .theme-icon {
-  fill: var(--background-color-header);
+  fill: none;
 }
 
 .toggle-theme:hover .theme-icon {
