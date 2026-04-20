@@ -1,15 +1,15 @@
 :root {
   --background-color-main: #fff;
   --background-color-header: cadetblue;
-  --text-color: #121212;
+  --text-color-header: #121212;
   --border-color: #121212;
 }
 
 [data-theme='dark'] {
-  --background-color-main: #121212;
-  --background-color-header: #1e1e1e;
-  --text-color: #e0e0e0;
-  --border-color: #333;
+  --background-color-main: #1e1e1e;
+  --background-color-header: #121212;
+  --text-color-header: #e0e0e0;
+  --border-color: #e0e0e0;
   
 }
 
@@ -48,6 +48,7 @@ nav {
 .title {
     font-weight: bold;
     font-size: 4.5rem;
+    color: var(--text-color-header);
     flex: 1;
     padding: 5px 20px;
 }
@@ -63,7 +64,7 @@ nav ul li a {
   margin: 0 0.25rem;
   font-size: 1.3rem;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-color-header);
 }
 
 nav ul li a:hover {
@@ -79,7 +80,7 @@ button {
   padding: 0.75rem 1.5rem;
   padding-right: 5rem;
   background-color: var(--background-color-header);
-  color: var(--text-color);
+  color: var(--text-color-header);
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -95,7 +96,6 @@ button:active {
   background-color: var(--accent-active-color);
 }
 
-/* Dark Mode Toggle Button */
 .toggle-theme {
   cursor: pointer;
   padding: 0.5rem;
