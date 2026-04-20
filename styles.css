@@ -3,8 +3,9 @@
   --background-color-header: cadetblue;
   --text-color-header: #121212;
   --border-color: #121212;
-  --border-color-main: #121212;
+  --text-color-main: cadetblue;
   --icon-hover-color: rgba(219, 219, 19, 0.598);
+  --section-title-background-color: blue;
 }
 
 [data-theme='dark'] {
@@ -12,8 +13,9 @@
   --background-color-header: #121212;
   --text-color-header: #e0e0e0;
   --border-color: #e0e0e0;
-  --border-color-main: #7e3eb0;
+  --text-color-main: #7e3eb0;
   --icon-hover-color: rgb(205, 52, 52);
+  --section-title-background-color: purple;
 }
 
 /*--accent-color: #bb86fc;
@@ -54,6 +56,7 @@ nav {
     color: var(--text-color-header);
     flex: 1;
     padding: 5px 20px;
+    border-bottom: 6px solid var(--border-color);
 }
 
 ul {
@@ -103,4 +106,111 @@ button {
 
 .toggle-theme:hover .theme-icon {
   fill: var(--icon-hover-color);
+}
+
+footer {
+  color: var(--text-color-header);
+}
+
+/*信息*/
+
+.top-section {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.avater-section {
+  text-align: center;
+}
+
+.avater-box {
+  width: 200px;
+  height: 220px;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.avater-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-tag {
+  background: var(--text-color-main);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  margin: 6px 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  width: 180px;
+}
+
+.basic-info {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 5px;
+  bottom: 5px;
+  width: 4px;
+  background: var(--section-title-background-color);
+}
+
+.info-item {
+  font-size: 16px;
+  margin: 12px 0;
+}
+
+.skills-section {
+  width: 180px;
+}
+
+.section-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.avater-box.avater-box.avater-box
+
+.self-evaluation {
+  margin-top: 30px;
+}
+
+.evaluation-text {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-top: 15px;
 }
