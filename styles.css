@@ -51,6 +51,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-family: Calibri, 'Segoe UI', Arial, sans-serif;
+    transition: all 0.3s ease;
 }
 
 body {
@@ -223,6 +224,11 @@ main {
   gap:2rem;
 }
 
+.number {
+  color: rgb(86, 86, 171);
+  text-decoration: none;
+}
+
 .info-item {
   font-size: 23px;
   line-height: 1.5;
@@ -354,6 +360,16 @@ footer div a:hover {
   height: 20px;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.github-icon {
+  background-image: url("github-sign.png");
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.linkedin-icon {
+  background-image: url("linkedin.png");
 }
 
 footer p {
