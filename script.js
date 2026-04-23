@@ -1,5 +1,3 @@
-localStorage.removeItem('theme');
-
 document.body.setAttribute('data-theme', 'light');
 document.getElementById('sun_icon').style.display = 'none';
 document.getElementById('moon_icon').style.display = 'block';
