@@ -2,33 +2,33 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>HJ's portfolio | basic information</title>
-        <!--搜索优化-->
         <meta name="description" content="The basic information page of Hongyu Jin's portfolio.">
         <meta name="keywords" content="Full-Stack Engineer, Computer Science">
         <meta name="author" content="Hongyu Jin">
-        <!--样式表-->
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@6.4.0/css/all.min.css">
     </head>
-
     <body>
         <header>
             <div class="title"><p>BASIC INFORMATION</p></div>
             <nav>
                 <ul>
-                    <li><a href="navigate.html">Navigation</a></li>
-                    <li><a href="information.html">Information</a></li>
-                    <li><a href="education.html">Education</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="workexperience.html">Work Experience</a></li>
+                    <li><a href="navigate.html">| Navigation</a></li>
+                    <li><a href="information.html">| Information</a></li>
+                    <li><a href="education.html">| Education</a></li>
+                    <li><a href="projects.html">| Projects</a></li>
+                    <li><a href="workexperience.html">| Work Experience</a></li>
                 </ul>
             </nav>
             <button class="toggle-theme" onclick="toggleTheme()">
-                <svg id="sun_icon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg id="sun_icon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
-                <svg id="moon_icon" class="theme-icon" style="display: none;" xmlns=" http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg id="moon_icon" class="theme-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" 
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="5"></circle>
                     <line x1="12" y1="1" x2="12" y2="3"></line>
                     <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -42,22 +42,65 @@
             </button>
         </header>
         <main>
-            <div class="top-section">
+            <div class="main-section">
                 <div class="avatar-section">
                     <div class="avatar-box">
-                        <img src="" alt="Avatar">
+                        <img src="avatar_20260423101138_24_11.jpg" alt="Avatar">
+                    </div>
+                    <button class="info-tag">Name: Hongyu Jin</button>
+                    <button class="info-tag">Age: 20</button>
+                </div>
+                <div class="right-content">
+                    <div class="info-skills-row">
+                        <div>
+                            <div><h2 class="section-title">Information</h2></div>
+                            <div class="information-row">
+                                <div>
+                                    <div class="info-item"><p>Education:</p></div>
+                                    <div class="info-item">Major:</div>
+                                    <div class="info-item">Phone Number:</div>
+                                    <div class="info-item">Email:</div>
+                                </div>
+                                <div>
+                                    <div class="info-item"><p>XXX</p></div>
+                                    <div class="info-item">Computer Science</div>
+                                    <div class="info-item">(540)-755-1743</div>
+                                    <div class="info-item">jhy1750883993@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="section-title">Skills</h2>
+                            <div class="section-icons">
+                                <button class="python">Python</button>
+                                <button class="java">Java</button>
+                                <button class="html">HTML</button>
+                                <button class="css">CSS</button>
+                                <button class="javascript">Javascript</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="self-evaluation">
+                        <h2 class="section-title">Self Evaluation</h2>
+                        <p class="evaluation-text">As a Computer Science student, I have developed a strong understanding of 
+                            core programming concepts through hands-on projects using different skills. I am curious, proactive
+                            , and committed to writing clean, efficient code. I enjoy solving problems, adapting to new tools 
+                            and frameworks. I am ready to apply my skills to real-world problems and keep growing as a developer.</p>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
         </main>
-        <footer><p>&copy; All rights reserved 2026</p></footer>
+        <footer>
+            <div class="social-links">
+                <a href=" " target="_blank" class="social-link">
+                    Visit my GitHub
+                </a >
+                <a href=" " target="_blank" class="social-link">
+                    Visit my LinkedIn
+                </a >
+            </div>
+            <p>&copy; All rights reserved 2026</p>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>
