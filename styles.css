@@ -18,6 +18,7 @@
   --javascript: #634c54;
   --javascript-text: #ff8fb3;
   --footer-hover:rgba(59, 59, 4, 0.598);
+  --like-count: rgb(218, 215, 215);
 }
 
 [data-theme='dark'] {
@@ -40,6 +41,7 @@
   --javascript:#3f1c27;
   --javascript-text:#ff4893;
   --footer-hover:rgba(219, 219, 19, 0.598);
+  --like-count: rgba(255,255,255,0.3);
 }
 
 html {
@@ -187,6 +189,61 @@ main {
   margin-top: 2rem;
   cursor: default;
 }
+
+.like-count {
+  background-color: var(--like-count);
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+
+
+
+
+
+/* 透明按钮 */
+.like-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* 图标默认黑色 */
+.thumb {
+  color: #000;
+  transition: color 0.2s;
+}
+/* 点赞红色 */
+.thumb.liked {
+  color: #ff2b2b;
+  fill: #ff2b2b;
+}
+
+/* 纯图标弹跳动画 */
+@keyframes bounceAnim {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.25);}
+  100% {transform: scale(1);}
+}
+.thumb.play-anim {
+  animation: bounceAnim 0.4s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .right-content {
   display: flex;
