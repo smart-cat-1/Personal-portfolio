@@ -19,12 +19,13 @@
   --javascript-text: #ff8fb3;
   --footer-hover:rgba(59, 59, 4, 0.598);
   --like-count: rgb(218, 215, 215);
+  --border-color2: #7d7c7c;
 }
 
 [data-theme='dark'] {
   --background-color-main: #1e1e1e;
   --background-color-header: #121212;
-  --text-color-header: #7e3eb0;
+  --text-color-header: #9b989e;
   --border-color: #8f8d8f;
   --text-color-main: #7e3eb0;
   --icon-hover-color: orange;
@@ -42,6 +43,7 @@
   --javascript-text:#ff4893;
   --footer-hover:rgba(219, 219, 19, 0.598);
   --like-count: rgba(255,255,255,0.3);
+  --border-color2:#8f8d8f;
 }
 
 html {
@@ -436,7 +438,7 @@ footer p {
   transform: translateY(-50%);
   font-size: 4rem;
   font-style: italic;
-  color:rgba(0, 0, 0, 0.201);
+  color: rgba(0, 0, 0, 0.201);
   z-index: -1;
   white-space: nowrap;
 }
@@ -467,24 +469,12 @@ div a:hover {
   transition: 0ms;
 }
 
-
-
-
-
-
-
-
-/* =========================
-   MOBILE LAYOUT (≤768px)
-========================= */
 @media (max-width: 768px) {
 
-  /* ===== BODY 边框缩小 ===== */
   body {
     border: 4px solid var(--border-color);
   }
 
-  /* ===== HEADER 变竖排 ===== */
   header {
     flex-direction: column;
     align-items: center;
@@ -517,7 +507,6 @@ div a:hover {
     padding: 0.5rem 1rem;
   }
 
-  /* ===== MAIN 改为单列 ===== */
   main {
     padding: 1rem;
   }
@@ -527,7 +516,6 @@ div a:hover {
     align-items: center;
   }
 
-  /* ===== 左侧 avatar ===== */
   .avatar-section {
     margin: 0;
   }
@@ -550,19 +538,16 @@ div a:hover {
     padding: 0 8px;
   }
 
-  /* ===== 右侧整体 ===== */
   .right-content {
     width: 100%;
     padding-top: 20px;
   }
 
-  /* ===== 信息 + 技能变纵向 ===== */
   .info-skills-row {
     flex-direction: column;
     gap: 2rem;
   }
 
-  /* ===== 信息区改紧凑 ===== */
   .information-row {
     flex-direction: row;
     justify-content: space-between;
@@ -573,7 +558,6 @@ div a:hover {
     font-size: 16px;
   }
 
-  /* ===== skills 按钮自适应 ===== */
   .section-icons {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -589,13 +573,11 @@ div a:hover {
     font-size: 0.9rem;
   }
 
-  /* ===== self evaluation ===== */
   .evaluation-text {
     font-size: 14px;
     line-height: 1.6;
   }
 
-  /* ===== social links 改竖排 ===== */
   .social-links2 {
     flex-direction: column;
     align-items: center;
@@ -610,9 +592,185 @@ div a:hover {
     font-size: 18px;
   }
 
-  /* ===== section effect 裁剪避免溢出 ===== */
   .section-effect::after {
     font-size: 2rem;
     left: 20px;
   }
+}
+
+
+
+
+
+
+
+
+
+.main {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.education-main-section {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100%;
+}
+
+.school-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex: 1;
+  padding: 0px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+}
+
+.divider-line {
+  width: 5px;
+  height: 100%;
+  background-color: var(--border-color2);
+}
+
+.education-section-title {
+  padding-top: 40px;
+  color: var(--text-color-main);
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.education-section-title::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 40px;
+  bottom: 5px;
+  width: 4px;
+  background: var(--section-title-background-color);
+}
+
+.education-section-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.education-section-effect::after {
+  content: attr(data-text);
+  position:absolute;
+  left: 15px;
+  top: 0%;
+  transform: translateY(100%);
+  font-size: 4rem;
+  font-style: italic;
+  color:rgba(0, 0, 0, 0.082);
+  z-index: -1;
+  white-space: nowrap;
+}
+
+.education-section-effect2 {
+  position: relative;
+  display: inline-block;
+}
+
+.education-section-effect2::after {
+  content: attr(data-text);
+  position:absolute;
+  left: -100px;
+  top: 0%;
+  transform: translateY(100%);
+  font-size: 4rem;
+  font-style: italic;
+  color:rgba(0, 0, 0, 0.082);
+  z-index: -1;
+  white-space: nowrap;
+}
+
+.education-logo {
+  margin-left: -50px;
+  display:flex;
+  align-items: center;
+  justify-items: center;
+  gap: 40px;
+}
+
+.gcc-icon {
+  background-image: url("Germanna-Red-Social.png");
+  width:50px;
+  height: 50px;
+}
+
+.vt-icon {
+  background-image: url("https://cdn.freebiesupply.com/logos/large/2x/virginia-tech-hokies-logo-png-transparent.png");
+  width:50px;
+  height: 50px;
+  background-color: rgb(179, 177, 177);
+}
+
+.class-section {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 5px;
+  color:var(--text-color-item);
+}
+
+.education-h2 {
+  padding-top:60px;
+  padding-bottom:20px;
+  color: var(--text-color-main);
+}
+
+.school-section5 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  padding: 0px;
+  align-items:center;
+  justify-content: flex-start;
+  padding-left: 80px;
+  padding-top: 0px;
+  flex-direction: column;
+}
+
+.python1 {
+  padding:0;
+  background: var(--python);
+  color: var(--python-text);
+  border: none;
+  border-radius: 20px;
+  width: 220px;
+  height: 80px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  margin-bottom: 30px;
+}
+
+.html1 {
+  background: var(--html);
+  color: var(--html-text);
+  border: none;
+  border-radius: 20px;
+  width: 220px;
+  height: 110px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.transcript {
+  padding-top: 20px;
+  font-size: 20px;
+  font-style: italic;
+  color:var(yellowgreen);
 }
