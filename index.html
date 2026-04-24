@@ -49,17 +49,28 @@
                     </div>
                     <button class="info-tag">Name: Hongyu Jin</button>
                     <button class="info-tag">Age: 20</button>
-                    <button class="like-btn" id="likeBtn">
-                        <svg class="thumb" id="thumbIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
-                        </svg>
-                        <span class="like-count" id="likeCount">0</span>
-                    </button>
+                    <div class="three-like-items">
+                        <button class="like-btn" id="likeBtn">
+                            <svg class="thumb" id="thumbIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/>
+                            </svg>
+                        </button>
+                        <button class="like-btn" id="dislikeBtn">
+                            <svg class="thumb" id="dislikeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2h-3"/>
+                            </svg>
+                        </button>
+                        <button class="like-btn" id="heartBtn">
+                            <svg class="thumb" id="heartIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
                 <div class="right-content">
                     <div class="info-skills-row">
                         <div>
-                            <div><h2 class="section-title">Information</h2></div>
+                            <div class="section-effect" data-text="INFORMATION"><h2 class="section-title">Information</h2></div>
                             <div class="information-row">
                                 <div>
                                     <div class="info-item"><p>Education:</p></div>
@@ -76,7 +87,7 @@
                             </div>
                         </div>
                         <div>
-                            <h2 class="section-title">Skills</h2>
+                            <div class="section-effect" data-text="SKILLS"><h2 class="section-title">Skills</h2></div>
                             <div class="section-icons">
                                 <button class="python">Python</button>
                                 <button class="java">Java</button>
@@ -87,7 +98,7 @@
                         </div>
                     </div>
                     <div class="self-evaluation">
-                        <h2 class="section-title">Self Evaluation</h2>
+                        <div class="section-effect" data-text="SELF EVALUATION"><h2 class="section-title">Self Evaluation</h2></div>
                         <p class="evaluation-text">As a Computer Science student, I have developed a strong understanding of 
                             core programming concepts through hands-on projects using different skills. I am curious, proactive
                             , and committed to writing clean, efficient code. I enjoy solving problems, adapting to new tools 

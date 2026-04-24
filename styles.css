@@ -139,7 +139,7 @@ button {
 
 main {
   display: flex;
-  padding-top: 5rem;
+  padding-top: 4rem;
   padding-left: 2rem;
   padding-right: 2rem;
   flex: 1;
@@ -185,24 +185,19 @@ main {
   font-weight: bold;
   display: block;
   width: 300px;
-  margin-bottom: 1.5rem;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   cursor: default;
 }
 
-.like-count {
-  background-color: var(--like-count);
-  padding: 2px 8px;
-  border-radius: 10px;
-  font-size: 12px;
-}
+.three-like-items {
+  padding-top: 15px;
+  display: flex; 
+  gap: 0px; 
+  justify-content: center;
+  align-items: center;
+  }
 
-
-
-
-
-
-/* 透明按钮 */
 .like-btn {
   background: transparent;
   border: none;
@@ -211,38 +206,35 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  padding: 0 15px;
 }
 
-/* 图标默认黑色 */
 .thumb {
   color: #000;
   transition: color 0.2s;
 }
-/* 点赞红色 */
-.thumb.liked {
-  color: #ff2b2b;
-  fill: #ff2b2b;
-}
 
-/* 纯图标弹跳动画 */
 @keyframes bounceAnim {
   0% {transform: scale(1);}
   50% {transform: scale(1.25);}
   100% {transform: scale(1);}
 }
+
 .thumb.play-anim {
   animation: bounceAnim 0.4s ease;
 }
 
+#thumbIcon.liked {
+  fill:#ff2b2b;
+}
 
+#dislikeIcon.liked {
+  fill: #3b82f6;
+}
 
-
-
-
-
-
-
-
+#heartIcon.liked {
+  fill: yellowgreen;
+}
 
 
 .right-content {
@@ -311,6 +303,7 @@ main {
   line-height: 2;
   margin-top: 15px;
   color: grey;
+  font-style: italic;
 }
 
 .python {
@@ -435,4 +428,22 @@ footer p {
   align-items: center;
   font-size: 14px;
   color: var(--text-color-item)
+}
+
+.section-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.section-effect::after {
+  content: attr(data-text);
+  position:absolute;
+  left: 60px;
+  top: 0%;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  font-style: italic;
+  color:rgba(0, 0, 0, 0.201);
+  z-index: -1;
+  white-space: nowrap;
 }
