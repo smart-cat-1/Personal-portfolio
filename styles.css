@@ -1110,47 +1110,6 @@ img {
     align-items: center;
   }
 
-  /* 关键：保持“配对关系”，不要拆开 */
-  /* 外层改为垂直 */
-  .information-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  /* 两列并排变成“横向对齐块” */
-  .information-row > div {
-    width: 100%;
-  }
-
-  /* 每一行强制横向排列（关键） */
-  .information-row > div {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-  }
-
-  /* 让每一项“像行一样对齐” */
-  .class-section {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 6px 10px;
-    border-radius: 6px;
-    background: rgba(0,0,0,0.04);
-  }
-
-  /* 让字体更清晰 */
-  .class-section {
-    font-size: 0.9rem;
-  }
-
-  /* code + name 视觉上仍然分组 */
-  .information-row > div:first-child .class-section {
-    font-weight: bold;
-  }
-
-
   /* ===== honor buttons ===== */
   .python1,
   .html1,
