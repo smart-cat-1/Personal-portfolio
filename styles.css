@@ -1102,6 +1102,10 @@ img {
     min-height: auto !important;
   }
 
+  .class-section {
+    font-size: 15px;
+  }
+
   .school-section4,
   .school-section5 {
     width: 100%;
