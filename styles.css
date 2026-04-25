@@ -1103,7 +1103,8 @@ img {
   }
 
   .class-section {
-    font-size: 15px;
+    font-weight: none;
+    font-size: 10px;
   }
 
   .school-section4,
