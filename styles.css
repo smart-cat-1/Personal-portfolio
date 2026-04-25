@@ -20,6 +20,7 @@
   --footer-hover:rgba(59, 59, 4, 0.598);
   --like-count: rgb(218, 215, 215);
   --border-color2: #7d7c7c;
+  --text-color-main2:cadetblue;
 }
 
 [data-theme='dark'] {
@@ -44,6 +45,7 @@
   --footer-hover:rgba(219, 219, 19, 0.598);
   --like-count: rgba(255,255,255,0.3);
   --border-color2:#8f8d8f;
+  --text-color-main2: white;
 }
 
 html {
@@ -167,11 +169,13 @@ main {
   margin-bottom: 30px;
 }
 
-.avatar-box img {
+.img134290 {
   width: 100%;
   height: 100%;
   object-fit: cover;
   margin-bottom: 30px;
+  transform: scale(1) !important;
+  transform-origin: bottom left;
 }
 
 .info-tag {
@@ -598,14 +602,6 @@ div a:hover {
   }
 }
 
-
-
-
-
-
-
-
-
 .main {
   margin: 0 0;
   padding: 0 0;
@@ -814,21 +810,11 @@ div a:hover {
   font-style: italic;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .school-section-nav1 {
-  background-color: #000;
+  background-color: #074d78b3;
+  background-repeat: no-repeat;
   color:white;
-  width: 30%;
+  width: 50%;
   height: 100%;
   display: flex;
   padding: 0px;
@@ -837,6 +823,7 @@ div a:hover {
   padding-left: 80px;
   padding-top: 0px;
   flex-direction: column;
+  border-right: #121212 solid 5px;
 }
 
 .nav-h1 {
@@ -844,63 +831,208 @@ div a:hover {
 }
 
 .nav-p {
-  margin-top: 20px;
-  padding-right: 220px;
+  font-size: 25px;
+  margin-top: 50px;
+  padding-right: 300px;
 }
 
-.pole {
-  width:120px;
-  height: 12px;
-  background: #666;
-  border-radius: 4px;
-  margin:50px auto 0;
-}
-
-.rope-wrap{
-  width: 2px;
-  background: #999;
-  margin: 0 auto;
-  transition: height 0.4s ease;
-  height: 60px;
+.interactive-area {
+  background-image: url("background.jpg");
+  width: 70%;
+  height: 100%;
   position: relative;
-  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.rope {
-  width: 14px;
-  height: 14px;
-  background: #555;
-  border-radius: 50%;
+body[data-theme="dark"] .interactive-area {
+  background-image:none;
+  background-color:#5c5b5b;
+  border: #121212 solid 15px;
+}
+
+
+
+.pull-ball:active {
+  cursor: grabbing;
+  transform: translateX(-50%) scale(1.2);
+}
+
+
+.pull-ball {
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 175, 47);
   position: absolute;
-  left: -6px;
-  bottom: 0;
-  cursor: pointer;
+  bottom: 100px;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: grab;
+  transition: transform 0.2s;
+
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+img {
+  transform: scale(3) !important;
+  transform-origin: bottom left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 菜单 */
+.pull-menu {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  opacity: 0;
+  transform: translateY(-50px);
+  pointer-events: none;
+
+  transition: all 0.4s ease;
+}
+
+/* 展开状态 */
+.pull-menu.active {
+  opacity: 1;
+  transform: translateY(0);
   pointer-events: auto;
 }
 
-.menu {
-  width: 180px;
-  margin: 10px auto 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
-  max-height: 0;
-  text-align: center;
-}
-
-.menu.show {
-  max-height: 300px;
-}
-
-.menu.a {
-  display: block;
-  margin: 8px 0;
-  padding: 6px;
-  background: #f5f5f5;
+/* 链接样式 */
+.pull-menu a {
   text-decoration: none;
-  color: #333;
-  border-radius: 4px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--text-color-main2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.05);
+  transition: all 0.3s;
 }
 
-.menu.a:hover {
-  background: #eee;
+.pull-menu a:hover {
+  transform: scale(1.1);
+  background: var(--icon-hover-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  /* ===== 整体布局改成上下结构 ===== */
+  .education-main-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* ===== 左侧标题区域 ===== */
+  .school-section-nav1 {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    border-right: none;
+    border-bottom: 5px solid var(--border-color);
+    text-align: center;
+  }
+
+  .nav-h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav-p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding-right: 0;
+  }
+
+  /* ===== 右侧交互区域 ===== */
+  .interactive-area {
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    background-size: cover;
+    border: none;
+  }
+
+  /* ===== 星星按钮（ball） ===== */
+  .pull-ball {
+    width: 70px;
+    height: 70px;
+    top: 25%;
+  }
+
+  /* ===== 菜单整体优化 ===== */
+  .pull-menu {
+    bottom: 30px;
+    gap: 12px;
+  }
+
+  .pull-menu a {
+    font-size: 1.5rem;
+    padding: 8px 14px;
+  }
+
+  /* ===== header 修复（避免太挤） ===== */
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .title p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* ===== 防止横向溢出 ===== */
+  body {
+    overflow-x: hidden;
+  }
 }

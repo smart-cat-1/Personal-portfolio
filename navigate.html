@@ -12,7 +12,7 @@
     </head>
     <body data-theme="light">
         <header>
-            <div class="title"><p>NAVIGATION</p></div>
+            <div class="title"><p>Why not click the star?</p></div>
             <button class="toggle-theme" onclick="toggleTheme()">
                 <svg id="sun_icon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -39,27 +39,23 @@
                     <p class="nav-p">
                         I use HTML CSS JS to build this.
                     </p>
-                    
                 </div>
-
-                <div class="school-section"">
-                    <div class="pole"></div>
-                    <div class="rope-wrap">
-                        <div class="rope" id="pullBtn"></div>
-                    </div>
-                    <div class="menu" id="linkMenu">
-                        <a href="information.html" class="nav-link">Basic Information</a>
-                        <a href="education.html" class="nav-link">Education</a>
-                        <a href="projects.html" class="nav-link">Projects</a>
-                        <a href="workexperience.html" class="nav-link">Work Experience</a>
+                <div class="interactive-area">
+                    <div class="pull-ball" id="pullBall"></div>                                
+                    <div class="pull-menu" id="pullMenu">
+                        <a href="information.html">Basic Information</a>
+                        <a href="education.html">Education</a>
+                        <a href="projects.html">Projects</a>
+                        <a href="workexperience.html">Work Experience</a>
                     </div>
                 </div>
-
             </div>
         </main>
         <footer>
             <p>&copy; All rights reserved 2026</p>
         </footer>
         <script src="script.js"></script>
+        <script src="script2.js" defer></script>
+        <script src="https://louisabraham.github.io/nekojs/neko.js" data-autostart></script>
     </body>
 </html>
