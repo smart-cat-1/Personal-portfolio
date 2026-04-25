@@ -1108,6 +1108,8 @@ img[src*="neko"] {
   /* ===== Germanna / VT icon ===== */
   .gcc-icon,
   .vt-icon {
+    margin-top: 6px;
+    padding-top: 6px;
     width: 40px;
     height: 40px;
   }
@@ -1173,15 +1175,5 @@ img[src*="neko"] {
   /* ===== 防止横向溢出 ===== */
   body {
     overflow-x: hidden;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    padding-top: 12px;
-  }
-
-  header {
-    margin-top: 6px;
   }
 }
