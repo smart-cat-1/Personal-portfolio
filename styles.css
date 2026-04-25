@@ -174,7 +174,7 @@ main {
   height: 100%;
   object-fit: cover;
   margin-bottom: 30px;
-  transform: scale(1) !important;
+  
   transform-origin: bottom left;
 }
 
@@ -804,7 +804,7 @@ div a:hover {
 }
 
 .transcript {
-  margin-top: 0;
+  margin-top: 0px;
   padding-top: 0px;
   font-size: 20px;
   font-style: italic;
@@ -886,10 +886,7 @@ body[data-theme="dark"] .interactive-area {
   );
 }
 
-img {
-  transform: scale(3) !important;
-  transform-origin: bottom left;
-}
+
 
 
 
@@ -948,13 +945,32 @@ img {
 
 
 
+/*img {
+  transform: scale(3) !important;
+  transform-origin: bottom left;
+}
+*/
+
+
+img[src*="neko"] {
+  transform: scale(3);
+  transform-origin: bottom left;
+}
 
 
 
 
 
-
-
+.next {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: none;
+  margin-left: 6rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  color: var(--background-color-header);
+}
 
 
 
