@@ -1175,3 +1175,13 @@ img[src*="neko"] {
     overflow-x: hidden;
   }
 }
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 12px;
+  }
+
+  header {
+    margin-top: 6px;
+  }
+}
