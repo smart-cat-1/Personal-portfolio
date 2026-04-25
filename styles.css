@@ -964,6 +964,10 @@ img {
 
 
 @media (max-width: 768px) {
+  img {
+  transform: scale(1) !important;
+  transform-origin: bottom left;
+  }
 
   /* ===== 整体布局改成上下结构 ===== */
   .education-main-section {
