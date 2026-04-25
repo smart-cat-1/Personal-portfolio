@@ -1110,17 +1110,36 @@ img {
     align-items: center;
   }
 
-  /* ===== course list stack ===== */
+  /* 关键：保持“配对关系”，不要拆开 */
   .information-row {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
 
-  .class-section {
-    font-size: 0.9rem;
-    text-align: center;
+  /* 每一列变成“卡片组” */
+  .information-row > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  /* 每一门课变成“横向小卡片” */
+  .class-section {
+    width: 90%;
+    text-align: center;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.05);
+  }
+
+  /* code + name 视觉上仍然分组 */
+  .information-row > div:first-child .class-section {
+    font-weight: bold;
+  }
+}
 
   /* ===== honor buttons ===== */
   .python1,
