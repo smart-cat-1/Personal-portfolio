@@ -45,3 +45,9 @@ function setupButton(btnId, iconId, storageKey) {
 setupButton("likeBtn", "thumbIcon", "thumbLiked");
 setupButton("dislikeBtn", "dislikeIcon", "dislikeLiked");
 setupButton("heartBtn", "heartIcon", "heartLiked");
+
+const pullBtn = document.getElementById("pullBtn");
+const linkMenu = document.getElementById("linkMenu");
+pullBtn.addEventListener("click", () => {
+  linkMenu.classList.toggle("show");
+})
