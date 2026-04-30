@@ -1,17 +1,30 @@
-document.body.setAttribute('data-theme', 'light');
-document.getElementById('sun_icon').style.display = 'none';
-document.getElementById('moon_icon').style.display = 'block';
-
 function toggleTheme() {
-  const sunIcon = document.getElementById('sun_icon');
-  const moonIcon = document.getElementById('moon_icon');
-  const body = document.body;
-  const currentTheme = body.getAttribute('data-theme');
+  const root = document.documentElement;
+  const currentTheme = root.getAttribute('data-theme') || 'light';
 
   const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-  body.setAttribute('data-theme', newTheme);
 
-  if (newTheme === 'dark') {
+  root.setAttribute('data-theme', newTheme);
+  sessionStorage.setItem('theme', newTheme);
+
+  updateIcons(newTheme);
+}
+
+
+// 初始化 icon（页面加载后）
+window.addEventListener('DOMContentLoaded', () => {
+  const theme = document.documentElement.getAttribute('data-theme') || 'light';
+  updateIcons(theme);
+});
+
+
+function updateIcons(theme) {
+  const sunIcon = document.getElementById('sun_icon');
+  const moonIcon = document.getElementById('moon_icon');
+
+  if (!sunIcon || !moonIcon) return;
+
+  if (theme === 'dark') {
     sunIcon.style.display = 'block';
     moonIcon.style.display = 'none';
   } else {

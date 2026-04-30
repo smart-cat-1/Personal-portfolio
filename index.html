@@ -9,9 +9,10 @@
         <meta name="author" content="Hongyu Jin">
         <link rel="stylesheet" href="css/public.css">
         <link rel="stylesheet" href="css/navigation.css">
+        <script>const theme = sessionStorage.getItem('theme') || 'light';document.documentElement.setAttribute('data-theme', theme);</script>
     </head>
 
-    <body data-theme="light">
+    <body>
         <header>
             <div class="title"><p>Why not click the star?</p></div>
             <button class="toggle-theme" onclick="toggleTheme()">

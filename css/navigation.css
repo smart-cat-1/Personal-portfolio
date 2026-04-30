@@ -50,11 +50,11 @@
   align-items: flex-start;
 }
 
-body[data-theme="dark"] .index-right-section {
-  background-image:none;
-  background-color:#5c5b5b;
-  border: #121212 solid 15px;
-  transition: 0.3 ease;
+html[data-theme="dark"] .index-right-section {
+  background-image: none;
+  background-color: #5c5b5b;
+  border: 15px solid #121212;
+  transition: all 0.3s ease;
 }
 
 /*===button-star===*/
