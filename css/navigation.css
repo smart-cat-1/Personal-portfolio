@@ -1,0 +1,138 @@
+@import url(public.css);
+
+.index-main {
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.index-main-section {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100%;
+}
+
+.index-left-section {
+  background-color: #074d78b3;
+  background-repeat: no-repeat;
+  color:white;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  padding: 0px;
+  align-items:center;
+  justify-content: center;
+  padding-left: 80px;
+  padding-top: 0px;
+  flex-direction: column;
+  border-right: #121212 solid 5px;
+}
+
+.index-title {
+  font-size: 100px;
+}
+
+.index-title-extra {
+  font-size: 25px;
+  margin-top: 50px;
+  padding-right: 300px;
+}
+
+.index-right-section {
+  background-image: url("../assets/images/background.jpg");
+  width: 70%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+body[data-theme="dark"] .index-right-section {
+  background-image:none;
+  background-color:#5c5b5b;
+  border: #121212 solid 15px;
+  transition: 0.3 ease;
+}
+
+/*===button-star===*/
+
+.star:active {
+  cursor: grabbing;
+  transform: translateX(-50%) scale(1.2);
+}
+
+.star {
+  width: 100px;
+  height: 100px;
+  background: rgb(255, 175, 47);
+  position: absolute;
+  bottom: 100px;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: grab;
+  transition: transform 0.2s;
+
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.pull-menu {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  opacity: 0;
+  transform: translateY(-50px);
+  pointer-events: none;
+
+  transition: all 0.4s ease;
+}
+
+.pull-menu.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.pull-menu a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--text-color-main2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.05);
+  transition: all 0.3s;
+}
+
+.pull-menu a:hover {
+  transform: scale(1.1);
+  background: var(--icon-hover-color);
+}
+
+/*===FOOTER===*/
+
+footer p{
+  border-top: #121212 5px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background-color: var(--background-header);
+}

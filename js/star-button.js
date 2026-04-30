@@ -1,10 +1,10 @@
-const ball = document.getElementById("pullBall");
+const star = document.getElementById("pullStar");
 const menu = document.getElementById("pullMenu");
 
 let isDragging = false;
 let startY = 0;
 
-ball.addEventListener("mousedown", (e) => {
+star.addEventListener("mousedown", (e) => {
   isDragging = true;
   startY = e.clientY;
 });
@@ -23,7 +23,6 @@ document.addEventListener("mouseup", () => {
   isDragging = false;
 });
 
-/* 点击收回 */
-ball.addEventListener("click", () => {
+star.addEventListener("click", () => {
   menu.classList.toggle("active");
 });

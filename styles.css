@@ -77,11 +77,6 @@ header {
     border-bottom: 7px solid var(--border-color);
 }
 
-nav {
-    display: flex;
-    background-color: var(--background-color-header);
-}
-
 .title {
     font-weight: bold;
     font-size: 4.5rem;
@@ -89,6 +84,11 @@ nav {
     flex: 1;
     padding: 5px 20px;
     
+}
+
+nav {
+    display: flex;
+    background-color: var(--background-color-header);
 }
 
 ul {
