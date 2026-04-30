@@ -1,0 +1,327 @@
+@import url(public.css);
+@import url(navigation.css);
+@import url(information.css);
+@import url(education.css);
+@import url(projects.css);
+@import url(work-experience.css);
+
+@media (max-width: 768px) {
+
+  body {
+    border: 4px solid var(--header-text_border);
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 5px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+  }
+
+  svg {
+    width: 2.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  .main-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar-section {
+    margin: 0;
+  }
+
+  .avatar-box {
+    width: 200px;
+    height: 260px;
+  }
+
+  .info-tag {
+    width: 220px;
+    font-size: 1rem;
+  }
+
+  .three-like-items {
+    gap: 10px;
+  }
+
+  .like-btn {
+    padding: 0 8px;
+  }
+
+  .right-content {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .info-skills-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .information-row {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .info-item {
+    font-size: 16px;
+  }
+
+  .section-icons {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .python,
+  .java,
+  .html,
+  .css,
+  .javascript {
+    width: 100%;
+    height: 45px;
+    font-size: 0.9rem;
+  }
+
+  .evaluation-text {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .social-links2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .social-link2 {
+    font-size: 18px;
+  }
+
+  .social-link {
+    font-size: 18px;
+  }
+
+  .section-effect::after {
+    font-size: 2rem;
+    left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  img {
+  transform: scale(1) !important;
+  transform-origin: bottom left;
+  }
+
+  /* ===== 整体布局改成上下结构 ===== */
+  .education-main-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  /* ===== 左侧标题区域 ===== */
+  .school-section-nav1 {
+    width: 100%;
+    height: auto;
+    padding: 2rem 1rem;
+    border-right: none;
+    border-bottom: 5px solid var(--border-color);
+    text-align: center;
+  }
+
+  .nav-h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav-p {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding-right: 0;
+  }
+
+  /* ===== 右侧交互区域 ===== */
+  .interactive-area {
+    width: 100%;
+    height: 60vh;
+    min-height: 400px;
+    background-size: cover;
+    border: none;
+  }
+
+  /* ===== 星星按钮（ball） ===== */
+  .pull-ball {
+    width: 70px;
+    height: 70px;
+    top: 25%;
+  }
+
+  /* ===== 菜单整体优化 ===== */
+  .pull-menu {
+    bottom: 30px;
+    gap: 12px;
+  }
+
+  .pull-menu a {
+    font-size: 1.5rem;
+    padding: 8px 14px;
+  }
+
+  /* ===== header 修复（避免太挤） ===== */
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .title p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  /* ===== 防止横向溢出 ===== */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* ===== 整体改成纵向 ===== */
+  .education-main-section {
+    flex-direction: column;
+    align-items: center !important;
+    gap: 2rem;
+  }
+
+  /* ===== 每个 school section 全宽 ===== */
+  .school-section {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* ===== 分割线隐藏（手机没必要） ===== */
+  .divider-line {
+    display: none;
+  }
+
+  /* ===== 标题区域优化 ===== */
+  .education-section-title {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .education-section-effect::after,
+  .education-section-effect2::after {
+    font-size: 2rem;
+    left: 0;
+    transform: translateY(50%);
+  }
+
+  .education-logo {
+    flex-direction: column;
+    margin-left: 0;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* ===== Germanna / VT icon ===== */
+  .gcc-icon,
+  .vt-icon {
+    margin-top: 6px;
+    padding-top: 18px;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ===== nested layout collapse ===== */
+  .education-main-section .education-main-section {
+    flex-direction: column !important;
+    min-height: auto !important;
+  }
+
+  .class-section {
+    font-weight: none;
+    font-size: 10px;
+  }
+
+  .school-section4,
+  .school-section5 {
+    width: 100%;
+    padding-left: 0 !important;
+    margin-right: 0;
+    align-items: center;
+  }
+
+  /* ===== honor buttons ===== */
+  .python1,
+  .html1,
+  .java1 {
+    width: 90%;
+    font-size: 0.9rem;
+    height: 40px;
+  }
+
+  /* ===== GPA ===== */
+  .school-section5 .class-section {
+    font-size: 1.2rem;
+  }
+
+  /* ===== transcript ===== */
+  .transcript {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  /* ===== header mobile ===== */
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+
+  /* ===== 防止横向溢出 ===== */
+  body {
+    overflow-x: hidden;
+  }
+}
