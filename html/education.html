@@ -7,26 +7,30 @@
         <meta name="description" content="The education page of Hongyu Jin's portfolio.">
         <meta name="keywords" content="Full-Stack Engineer, Computer Science">
         <meta name="author" content="Hongyu Jin">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="../css/public.css">
+        <link rel="stylesheet" href="../css/education.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@6.4.0/css/all.min.css">
     </head>
+
     <body data-theme="light">
         <header>
             <div class="title"><p>EDUCATION</p></div>
             <nav>
-                <ul>
-                    <li><a href="index.html">| Navigation</a></li>
-                    <li><a href="information.html">| Information</a></li>
-                    
-                    <li><a href="projects.html">| Projects</a></li>
-                    <li><a href="workexperience.html">| Work Experience</a></li>
+                <ul class="ul">
+                    <li><a class="nav-ul-li-a" href="../index.html">| Navigation</a></li>
+                    <li><a class="nav-ul-li-a" href="information.html">| Information</a></li>
+                    <li><a class="nav-ul-li-a" href="education.html">| Education</a></li>
+                    <li><a class="nav-ul-li-a" href="projects.html">| Projects</a></li>
+                    <li><a class="nav-ul-li-a" href="work-experience.html">| Work Experience</a></li>
                 </ul>
             </nav>
+
             <button class="toggle-theme" onclick="toggleTheme()">
                 <svg id="sun_icon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" 
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
+
                 <svg id="moon_icon" class="theme-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="5"></circle>
@@ -41,20 +45,21 @@
                 </svg>
             </button>
         </header>
-        <main class="main">
-            <div class="education-main-section" style="align-items: flex-start;">
+
+        <main class="education-main">
+            <div class="education-main-section">
                 <div class="school-section">
                     <div class="education-logo">
                         <span class="icon gcc-icon"></span>
                         <div class="education-section-effect" data-text="GERMANNA CC"><h2 class="education-section-title">Germanna Community College</h2></div>
                     </div>
 
-                    <p style="color:var(--text-color-item)">(Associate Degree March 2025 -- May 2027)</p>
+                    <p style="color:var(--text-color-main)">(Associate Degree March 2025 -- May 2027)</p>
 
                     <div class="education-main-section" style="align-items: flex-start; min-height: 550px;">
-                        <div class="school-section4">
+                        <div class="school-section-column">
                             <h2 class="education-h2">Core classes</h2>
-                            <div class="information-row">
+                            <div class="education-row">
                                 <div>
                                     <div class="class-section">CSC221</div>
                                     <div class="class-section">CSC222</div>
@@ -70,6 +75,7 @@
                                     <div class="class-section">MTH264</div>
                                     <div class="class-section">MTH265</div>    
                                 </div>
+
                                     <div>
                                     <div class="class-section">Intro to problem solve and program</div>
                                     <div class="class-section">Object-oriented programming</div>
@@ -88,34 +94,24 @@
                             </div>
                         </div>
                         
-                        <div class="school-section5">
+                        <div class="school-section-honor">
                             <h2 class="education-h2">Honor</h2>
-                            <button class="python1">2025 Summer Dean's List</button>
-                            <button class="html1">2025 Fall President's List</button>
-                            <button class="java1">PTK Member</button>
+                            <button class="honor-1">2025 Summer Dean's List</button>
+                            <button class="honor-2">2025 Fall President's List</button>
+                            <button class="honor-3">PTK Member</button>
                             <h2 class="education-h2">GPA</h2>
                             <div class="class-section">4.00/4.00</div>
                         </div>
                     </div>
+
                     <div class="transcript">
-                        <p style="color:var(--text-color-main)">
+                        <p style="color:var(--text-color-special)">
                             If you want to learn more, <a style="color:rgb(245, 105, 105)" href="transcript.pdf" target="_blank">View My Transcript</a> here.
                         </p>
                     </div>
                 </div>
+
                 <div class="divider-line"></div>
-
-
-
-
-
-
-
-
-
-
-                
-                
 
                 <div class="school-section">
                     <div class="education-logo">
@@ -123,12 +119,12 @@
                         <div class="education-section-effect2" data-text="VIRGINIA TECH"><h2 class="education-section-title">Virginia Tech</h2></div>
                     </div>
 
-                    <p style="color:var(--text-color-item)">(Bachelor's Degree Auguest 2027 -- ? 2028)</p>
+                    <p style="color:var(--text-color-main)">(Bachelor's Degree Auguest 2027 -- ? 2028)</p>
 
                     <div class="education-main-section" style="align-items: flex-start; min-height: 550px;">
-                        <div class="school-section4">
+                        <div class="school-section-column">
                             <h2 class="education-h2">Core classes</h2>
-                            <div class="information-row">
+                            <div class="education-row">
                                 <div>
                                     <div class="class-section">o</div>
                                     <div class="class-section">o</div>
@@ -144,7 +140,8 @@
                                     <div class="class-section">o</div>
                                     <div class="class-section">o</div>    
                                 </div>
-                                    <div>
+                                
+                                <div>
                                     <div class="class-section">_______________________</div>
                                     <div class="class-section">_______________________</div>
                                     <div class="class-section">_______________________</div>
@@ -162,29 +159,31 @@
                             </div>
                         </div>
                         
-                        <div class="school-section5">
+                        <div class="school-section-honor">
                             <h2 class="education-h2">Honor</h2>
-                            <button class="python1">1</button>
-                            <button class="html1">2</button>
-                            <button class="java1">3</button>
+                            <button class="honor-1">1</button>
+                            <button class="honor-2">2</button>
+                            <button class="honor-3">3</button>
                             <h2 class="education-h2">GPA</h2>
                             <div class="class-section">QAQ</div>
                         </div>
                     </div>
+                    
                     <div class="transcript">
-                        <p style="color:var(--text-color-main)">
+                        <p style="color: var(--text-color-main)">
                             <a style="color:rgb(245, 105, 105)" href="blank.pdf" target="_blank">View My Transcript</a>
-                            <a href="projects.html" class="next">Next Part: Projects ↓</a>
+                            <a href="projects.html" class="next-page">Next Part: Projects ↓</a>
                         </p>
                     </div>
                 </div>
             
             </div>
         </main>
+
         <footer>
             <p>&copy; All rights reserved 2026</p>
         </footer>
-        <script src="script.js"></script>
+        <script src="../js/light-dark-button.js"></script>
     </body>
 </html>
 

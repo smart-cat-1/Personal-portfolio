@@ -21,14 +21,6 @@
   --skill-4-text: #ffa6f2;
   --skill-5-background: #634c54;
   --skill-5-text: #ff8fb3;
-  
-  
-  
-  
-  --footer-hover:rgba(59, 59, 4, 0.598);
-  --like-count: rgb(218, 215, 215);
-  --border-color2: #7d7c7c;
-  --text-color-main2:cadetblue;
 }
 
 [data-theme='dark'] {
@@ -53,13 +45,6 @@
   --skill-4-text: #ff65f8;
   --skill-5-background: #3f1c27;
   --skill-5-text: #ff4893;
-
-  
-  
-  --footer-hover:rgba(219, 219, 19, 0.598);
-  --like-count: rgba(255,255,255,0.3);
-  --border-color2:#8f8d8f;
-  --text-color-main2: white;
 }
 
 html {
