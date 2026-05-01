@@ -63,7 +63,7 @@
 }
 
 .education-section-title {
-  padding-top: 40px;
+  padding-top: 30px;
   color: var(--text-color-main);
   font-size: 35px;
   font-weight: bold;
@@ -168,14 +168,13 @@
   font-style: italic;
 }
 
-.next-page {
+.education-next-page {
   font-size: 30px;
   font-weight: bold;
   font-style: normal;
   text-decoration: none;
+  margin-top: 5px;
   margin-left: 6rem;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
   color: var(--text-color-special);
 }
 
@@ -268,12 +267,4 @@ div p a:hover {
   outline: 3px solid var(--header-text_border);
   border-radius: 5px;
   transition: none;
-}
-
-.gpa-section {
-  white-space: nowrap;
-  font-weight: bold;
-  font-size: 20px;
-  padding-bottom: 5px;
-  color: var(--text-color-main);
 }
