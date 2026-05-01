@@ -269,3 +269,11 @@ div p a:hover {
   border-radius: 5px;
   transition: none;
 }
+
+.gpa-section {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 5px;
+  color: var(--text-color-main);
+}
