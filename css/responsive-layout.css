@@ -36,9 +36,12 @@
   }
 
   header {
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     gap: 0.5rem;
     padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .title {
