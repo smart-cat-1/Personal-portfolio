@@ -36,7 +36,7 @@
   }
 
   header {
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     gap: 0.5rem;
     padding: 0.5rem;
   }
@@ -44,8 +44,9 @@
   .title {
     flex: 1 0 100%;
     font-size: 2.2rem;
-      text-align: center;
+    text-align: center;
     padding: 0.25rem 0.5rem;
+    
   }
 
   nav {
@@ -227,4 +228,3 @@
     font-size: 1rem;
   }
 }
-  
