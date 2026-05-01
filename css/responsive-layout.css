@@ -1,82 +1,122 @@
 @import url(public.css);
-@import url(navigation.css);
-@import url(information.css);
-@import url(education.css);
-@import url(projects.css);
-@import url(work-experience.css);
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .index-title {
+    font-size: 4rem;
+  }
+
+  .index-title-extra {
+    padding-right: 2rem;
+  }
+
+  .info-skills-row {
+    gap: 3rem;
+  }
+
+  .education-main-section {
+    align-items: stretch;
+  }
+
+  .school-section-column,
+  .school-section-honor {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
 
   body {
-    border: 4px solid var(--header-text_border);
+    border-width: 4px;
+    overflow-x: hidden;
   }
 
   header {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 0;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
   }
 
   .title {
+    flex: 1 0 100%;
     font-size: 2.2rem;
-    text-align: center;
-    padding: 5px;
+      text-align: center;
+    padding: 0.25rem 0.5rem;
   }
 
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
+  nav {
+    width: 100%;
+    justify-content: center;
   }
 
-  nav ul li a {
+  .ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+  }
+
+  .nav-ul-li-a {
     font-size: 1rem;
   }
 
   svg {
-    width: 2.5rem;
+    width: 2rem;
   }
 
   button {
+    padding: 0.3rem;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
   }
 
-  main {
-    padding: 1rem;
-  }
-
-  .main-section {
+  .index-main-section,
+  .main-section,
+  .education-main-section {
     flex-direction: column;
-    align-items: center;
+  }
+
+  .index-left-section,
+  .index-right-section,
+  .school-section,
+  .right-content {
+    width: 100%;
+  }
+
+  .index-left-section {
+    border-right: none;
+    border-bottom: 4px solid var(--header-text_border);
+    padding: 2rem 1rem;
+    min-height: 40vh;
+  }
+
+  .index-right-section {
+    min-height: 55vh;
+  }
+
+  .star {
+    width: 75px;
+    height: 75px;
+  }
+
+  .pull-menu a {
+    font-size: 1.6rem;
+    padding: 0.5rem 0.8rem;
   }
 
   .avatar-section {
-    margin: 0;
+    margin: 0 auto 2rem;
+  }
+
+  .avatar-box,
+  .info-tag {
+    width: min(300px, 85vw);
   }
 
   .avatar-box {
-    width: 200px;
-    height: 260px;
-  }
-
-  .info-tag {
-    width: 220px;
-    font-size: 1rem;
-  }
-
-  .three-like-items {
-    gap: 10px;
-  }
-
-  .like-btn {
-    padding: 0 8px;
-  }
-
-  .right-content {
-    width: 100%;
-    padding-top: 20px;
+    height: 380px;
   }
 
   .info-skills-row {
@@ -85,243 +125,106 @@
   }
 
   .information-row {
-    flex-direction: row;
-    justify-content: space-between;
     gap: 1rem;
   }
 
-  .info-item {
-    font-size: 16px;
-  }
-
-  .section-icons {
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .python,
-  .java,
-  .html,
-  .css,
-  .javascript {
-    width: 100%;
-    height: 45px;
-    font-size: 0.9rem;
-  }
-
-  .evaluation-text {
-    font-size: 14px;
-    line-height: 1.6;
-  }
-
-  .social-links2 {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .social-link2 {
-    font-size: 18px;
-  }
-
-  .social-link {
-    font-size: 18px;
-  }
-
-  .section-effect::after {
-    font-size: 2rem;
-    left: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  img {
-  transform: scale(1) !important;
-  transform-origin: bottom left;
-  }
-
-  /* ===== 整体布局改成上下结构 ===== */
-  .education-main-section {
-    flex-direction: column;
-    height: auto;
-  }
-
-  /* ===== 左侧标题区域 ===== */
-  .school-section-nav1 {
-    width: 100%;
-    height: auto;
-    padding: 2rem 1rem;
-    border-right: none;
-    border-bottom: 5px solid var(--border-color);
-    text-align: center;
-  }
-
-  .nav-h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .nav-p {
+  .info-item,
+  .content,
+  .content-2 {
     font-size: 1rem;
-    margin-top: 1rem;
-    padding-right: 0;
+    white-space: normal;
   }
 
-  /* ===== 右侧交互区域 ===== */
-  .interactive-area {
-    width: 100%;
-    height: 60vh;
-    min-height: 400px;
-    background-size: cover;
-    border: none;
-  }
-
-  /* ===== 星星按钮（ball） ===== */
-  .pull-ball {
-    width: 70px;
-    height: 70px;
-    top: 25%;
-  }
-
-  /* ===== 菜单整体优化 ===== */
-  .pull-menu {
-    bottom: 30px;
-    gap: 12px;
-  }
-
-  .pull-menu a {
-    font-size: 1.5rem;
-    padding: 8px 14px;
-  }
-
-  /* ===== header 修复（避免太挤） ===== */
-  header {
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  .title p {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  /* ===== 防止横向溢出 ===== */
-  body {
-    overflow-x: hidden;
-  }
-}
-
-@media (max-width: 768px) {
-
-  /* ===== 整体改成纵向 ===== */
-  .education-main-section {
-    flex-direction: column;
-    align-items: center !important;
-    gap: 2rem;
-  }
-
-  /* ===== 每个 school section 全宽 ===== */
-  .school-section {
-    width: 100%;
-    padding: 0 1rem;
-  }
-
-  /* ===== 分割线隐藏（手机没必要） ===== */
-  .divider-line {
-    display: none;
-  }
-
-  /* ===== 标题区域优化 ===== */
+  .section-title,
+  .projects-title,
   .education-section-title {
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: 20px;
+    font-size: 1.8rem;
   }
 
+  .section-effect::after,
   .education-section-effect::after,
   .education-section-effect2::after {
     font-size: 2rem;
     left: 0;
-    transform: translateY(50%);
   }
 
   .education-logo {
-    flex-direction: column;
     margin-left: 0;
-    gap: 10px;
-    text-align: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  /* ===== Germanna / VT icon ===== */
-  .gcc-icon,
-  .vt-icon {
-    margin-top: 6px;
-    padding-top: 18px;
-    width: 40px;
-    height: 40px;
+  .divider-line {
+    width: 100%;
+    height: 4px;
   }
 
-  /* ===== nested layout collapse ===== */
-  .education-main-section .education-main-section {
-    flex-direction: column !important;
-    min-height: auto !important;
+  .school-section-column,
+  .school-section-honor {
+    width: 100%;
+    padding: 0 1rem;
+    align-items: flex-start;
+  }
+
+  .education-row {
+    gap: 1rem;
   }
 
   .class-section {
-    font-weight: none;
-    font-size: 10px;
+    white-space: normal;
   }
 
-  .school-section4,
-  .school-section5 {
-    width: 100%;
-    padding-left: 0 !important;
-    margin-right: 0;
-    align-items: center;
+  .projects-section {
+    gap: 1.5rem;
   }
 
-  /* ===== honor buttons ===== */
-  .python1,
-  .html1,
-  .java1 {
-    width: 90%;
-    font-size: 0.9rem;
-    height: 40px;
-  }
 
-  /* ===== GPA ===== */
-  .school-section5 .class-section {
-    font-size: 1.2rem;
-  }
-
-  /* ===== transcript ===== */
-  .transcript {
-    text-align: center;
-    font-size: 0.9rem;
-    padding: 1rem;
-  }
-
-  /* ===== header mobile ===== */
-  header {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 10px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-  }
-
-  nav ul li a {
-    font-size: 0.9rem;
-  }
-
-  /* ===== 防止横向溢出 ===== */
-  body {
-    overflow-x: hidden;
+  .card {
+    max-width: 100%;
   }
 }
+
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .index-title {
+    font-size: 2.2rem;
+  }
+
+  .index-title-extra {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding-right: 0;
+  }
+
+  .pull-menu {
+    bottom: 1rem;
+    gap: 0.6rem;
+  }
+
+  .pull-menu a {
+    font-size: 1.1rem;
+  }
+
+  .avatar-box {
+    height: 300px;
+  }
+
+  .section-icons {
+    grid-template-columns: 1fr;
+  }
+
+  .honor-1,
+  .honor-2,
+  .honor-3,
+  .honor-4,
+  .honor-5 {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+  
