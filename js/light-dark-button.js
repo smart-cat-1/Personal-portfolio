@@ -10,13 +10,10 @@ function toggleTheme() {
   updateIcons(newTheme);
 }
 
-
-// 初始化 icon（页面加载后）
 window.addEventListener('DOMContentLoaded', () => {
   const theme = document.documentElement.getAttribute('data-theme') || 'light';
   updateIcons(theme);
 });
-
 
 function updateIcons(theme) {
   const sunIcon = document.getElementById('sun_icon');
