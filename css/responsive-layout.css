@@ -32,11 +32,15 @@
 }
 
 .gpa-section {
-  padding-left: 8.4rem;
+  padding-left: 8rem;
 }
 
-.next-page {
-  padding-left: 30rem;
+.education-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 }
 
 @media (max-width: 992px) {
